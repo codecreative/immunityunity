@@ -33,7 +33,7 @@ The data is compiled by [Our World in Data](https://ourworldindata.org/), a smal
 Not exactly. It is flawed in that sense. For starters, the outside lines will be much longer than those on the inside for the same percentage. There are deliberately no labels to make it more abstract. It also goes along with the idea that we need all the circles to be complete so there is less focus on the individuals. Let's call it data art... using "art" in the loosest of definitions.
 
 # Tech
-This repo contains a [GitHub Action](https://github.com/features/actions) that runs once a day - 22:02 UK time. It runs an R script that fetches the vaccination data, builds the graphic in [ggplot2](https://ggplot2.tidyverse.org/index.html) and posts the result to [@immunityunity](https://twitter.com/immunityunity) on Twitter using [{rtweet}](https://docs.ropensci.org/rtweet/).
+This repo contains a [GitHub Action](https://github.com/features/actions) that runs once a day - about 10pm UK time. It runs an R script that fetches the vaccination data, builds the graphic in [ggplot2](https://ggplot2.tidyverse.org/index.html) and posts the result to [@immunityunity](https://twitter.com/immunityunity) on Twitter using [{rtweet}](https://docs.ropensci.org/rtweet/).
 
 This repo exists because of other people openly sharing their knowledge. I ~~stole~~ borrowed the GitHub action setup heavily from Matt Dray's [londonmapbot](https://www.rostrum.blog/2020/09/21/londonmapbot/) and Matt Kerlogue's [post on scraping PDFs](https://lapsedgeographer.london/2020-04/covid19-scraping/) to set up this project.
 
