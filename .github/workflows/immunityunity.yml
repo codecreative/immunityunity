@@ -20,7 +20,14 @@ jobs:
         with:
           r-version: '3.6.3'
           
-      - name: Install rtweet package
+      - name: Restore R package cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+          
+      - name: Install packages
         run: Rscript -e 'install.packages(c("rtweet", "dplyr", "ggplot2"), dependencies = TRUE)'
         
       - name: Download Parse and Tweet
