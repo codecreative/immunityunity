@@ -1,7 +1,6 @@
 library('dplyr')
 library('rtweet')
 library('ggplot2')
-library('lubridate')
 
 # Learning R is part of my reason for this project, so proceed with caution
 
