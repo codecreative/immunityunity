@@ -35,6 +35,8 @@ Not exactly. It is flawed in that sense. For starters, the outside lines will be
 # Tech
 This repo contains a [GitHub Action](https://github.com/features/actions) that runs once a day - about 10pm UK time. It runs an R script that fetches the vaccination data, builds the graphic in [ggplot2](https://ggplot2.tidyverse.org/index.html) and posts the result to [@immunityunity](https://twitter.com/immunityunity) on Twitter using [{rtweet}](https://docs.ropensci.org/rtweet/).
 
+There is an intermittent issue that can cause the action to fail. Seems to be when posting a media object through rtweet. It doesn't happen every time so it is difficult to break down the actual source of the problem.
+
 This repo exists because of other people openly sharing their knowledge. I ~~stole~~ borrowed the GitHub action setup heavily from Matt Dray's [londonmapbot](https://www.rostrum.blog/2020/09/21/londonmapbot/) and Matt Kerlogue's [post on scraping PDFs](https://lapsedgeographer.london/2020-04/covid19-scraping/) to set up this project.
 
 # Design inspiration
