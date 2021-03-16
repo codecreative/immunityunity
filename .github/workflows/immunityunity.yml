@@ -3,7 +3,7 @@ name: immunityunity
 on:
   workflow_dispatch:
   schedule:
-    - cron: '1 22 * * *'
+    - cron: '46 21 * * *'
 
 jobs:
   run-immunityunity:
