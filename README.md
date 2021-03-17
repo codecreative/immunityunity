@@ -51,5 +51,7 @@ For more circular inspiration, I recommend [The Book of Circles](https://www.ama
 
 * [Simon Willison](https://simonwillison.net/) for his [lightning talk](https://www.twitter.com/simonw/status/1367632117127995393) at NICAR21 that piqued my curiousity into GitHub Actions and the possibilities for newsroom applications.
 
-# Other resources
-[Github actions with R](https://ropenscilabs.github.io/actions_sandbox/)
+# Related resources
+* [Github actions with R](https://ropenscilabs.github.io/actions_sandbox/)
+* Matt's breakdown of his [narrowbotR project](https://lapsedgeographer.london/2020-10/virtual-gongoozling/)
+
