@@ -25,6 +25,8 @@ That quote inspired [a wonderful project by David Bauer](https://labs.davidbauer
 
 To fully complete a circle, the state must reach 85% vaccinated population. That may a stretch, but as it is the upper end of the range mentioned by Dr. Fauci, that is our target.
 
+Images through March 14th have been done in a batch process looping through the dates. This project is running from March 15th, 2021. Hopefully automatically, but possibly with a slight nudge every now and then.
+
 
 # Data source
 The data is compiled by [Our World in Data](https://ourworldindata.org/), a small team doing big work. Please consider [donating](https://ourworldindata.org/donate). You can find their covid vaccination data [on GitHub](https://github.com/owid/covid-19-data/tree/master/public/data/vaccinations).
