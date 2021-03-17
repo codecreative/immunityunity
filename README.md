@@ -37,7 +37,7 @@ This repo contains a [GitHub Action](https://github.com/features/actions) that r
 
 There is an intermittent issue that can cause the action to fail. Seems to be when posting a media object through rtweet. It doesn't happen every time so it is difficult to break down the actual source of the problem.
 
-This repo exists because of other people openly sharing their knowledge. I ~~stole~~ borrowed the GitHub action setup heavily from Matt Dray's [londonmapbot](https://www.rostrum.blog/2020/09/21/londonmapbot/) and Matt Kerlogue's [post on scraping PDFs](https://lapsedgeographer.london/2020-04/covid19-scraping/) to set up this project.
+This repo exists because of other people openly sharing their knowledge. I ~~stole~~ borrowed the GitHub action setup heavily from Matt Dray's [londonmapbot](https://www.rostrum.blog/2020/09/21/londonmapbot/) and Matt Kerlogue's [post on scraping PDFs](https://lapsedgeographer.london/2020-04/covid19-scraping/) to set up this project. I've added caching but need to research a little more to see if I've done it 100% correctly.
 
 # Design inspiration
 [A love letter to coord_polar()](https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/) by [Ijeamaka Anyene](https://twitter.com/ijeamaka_a). I'm an R novice, so wasn't sure how to accomplish what I was aiming for. This was perfect and inspiring for many reasons. So much to learn here, definitely going to dig into the more complex examples.
