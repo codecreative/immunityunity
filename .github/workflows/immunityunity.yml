@@ -25,12 +25,11 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+          key: ${{ runner.os }}-${{ hashFiles('install-packages') }}-1
           
       - name: Install packages
-        if: steps.cache-r-packages.outputs.cache-hit != 'true'
-        run: Rscript -e 'install.packages(c("rtweet", "dplyr", "ggplot2"), dependencies = TRUE)'
+        if: steps.cache-r-packages.outputs.cache-hit != 'true'        
+        run: R -e 'source("install-packages.R", echo = TRUE)'
         
       - name: Download Parse and Tweet
         run: Rscript vax.R
