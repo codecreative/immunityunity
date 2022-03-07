@@ -87,7 +87,7 @@ status <- paste(
   min,
   '% to ',
   max,
-  '% fully vaccinated.',
+  '% fully vaccinated. (A full circle is 85% - more details in the project notes https://github.com/codecreative/immunityunity#concept)',
   sep=""
 )
 
