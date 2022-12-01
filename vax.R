@@ -34,7 +34,7 @@ usa <- usa_raw %>%
     y = row_number(),
     yend = y,
     x = 0,
-    xend = people_fully_vaccinated_per_hundred
+    xend = ifelse(people_fully_vaccinated_per_hundred > 85, 85, people_fully_vaccinated_per_hundred )
   ) %>%
   select( c('location', 'people_fully_vaccinated_per_hundred', 'people_vaccinated_per_hundred', 'x', 'xend', 'y', 'yend'))
 
