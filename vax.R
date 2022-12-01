@@ -9,9 +9,8 @@ states <- c('Alabama','Alaska','Arizona','Arkansas','California','Colorado','Con
 
 #obtain twitter token
 token <- rtweet::rtweet_bot(
-  app = "alottabot",
-  consumer_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
-  consumer_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
+  api_key =    Sys.getenv("TWITTER_CONSUMER_API_KEY"),
+  api_secret = Sys.getenv("TWITTER_CONSUMER_API_SECRET"),
   access_token =    Sys.getenv("TWITTER_ACCESS_TOKEN"),
   access_secret =   Sys.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 )
@@ -91,10 +90,18 @@ status <- paste(
   sep=""
 )
 
+# Provide alt-text description
+alt_text <- paste(
+  "A chart of lines going in a circle",
+  "provided by MapBox. Typically contains a residential or",
+  "industrial area, some fields or a golf course."
+)
+
 # post it
 rtweet::post_tweet( 
   status = status,
   media = file,
+  media_alt_text = 'A radial bar chart showing 50 states and their fully vaccinated rates for covid19.',
   token = token
 )
 
