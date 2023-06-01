@@ -2,8 +2,8 @@ name: immunityunity
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '46 20 * * *'
+#  schedule:
+#    - cron: '46 20 * * *'
 
 jobs:
   run-immunityunity:
